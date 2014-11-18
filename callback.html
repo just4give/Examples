@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script type="text/javascript">
+		var func1 = function(callback1){
+			var msg = "I am in callback-1";
+			callback1(msg,"X");
+		}
+
+		func1(function (data,arg2){
+			alert("Two parameters:"+data+ " and "+arg2);
+			
+		});
+
+		func1(function (data){
+			alert("One parameter:"+data);
+			
+		});
+
+	</script>
+</head>
+<body>
+	Javascript callback pattern
+</body>
+</html>
